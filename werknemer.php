@@ -1,5 +1,6 @@
 <?php
 
+require "connectie.php";
 class werknemer
 {
     protected $werknemerEmail;
@@ -22,7 +23,7 @@ class werknemer
     }
 public function aanmelden()
 {
-    require "connectie.php";
+    global $conn;
     $werknemerEmail=$this->getWerknemerEmail();
     $werknemerWachtwoord=$this->getWerknemerWachtwoord();
     $wachtwoordHash=password_hash($werknemerWachtwoord, PASSWORD_DEFAULT);
@@ -43,6 +44,7 @@ public function inloggen()
 }
     public function alleWerknemers()
     {
+        global $conn;
         require "connectie.php";
         $sql = $conn->prepare
         ("select * from medewerker");
