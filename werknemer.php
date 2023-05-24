@@ -30,11 +30,11 @@ public function aanmelden()
     $sql = $conn->prepare
     ("
         insert into medewerker values 
-        (:medewerkerEmail, :medewerkerWachtwoord)
+        (:werknemerEmail, :werknemerWachtwoord)
     ");
     $sql->bindParam(":werknemerEmail",$werknemerEmail);
     $sql->bindParam(":werknemerWachtwoord", $wachtwoordHash);
-    $sql->execute("");
+    $sql->execute();
     echo    "de werknemer is in de database gezet.<br/>";
 
 }
@@ -62,3 +62,4 @@ public function inloggen()
         echo $this->getWerknemerWachtwoord();
     }
 }
+?>
