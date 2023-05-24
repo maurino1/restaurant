@@ -1,5 +1,3 @@
-<?php
-echo"
 <h1>aanmeldformulier werknemerner</h1>
 <form action="aanmeldForm2.php" method="post">
     email: <br/>
@@ -9,5 +7,3 @@ echo"
     <input type="submit"><br/><br/>
 </form>
 <a href="hoofdmenu.php">terug naar hoofdmenu.</a>
-";
-?>

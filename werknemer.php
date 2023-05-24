@@ -6,7 +6,7 @@ class werknemer
     protected $werknemerEmail;
     protected $werknemerWachtwoord;
 
-    public function _construct($werknemerEmail = NULL, $werknemerWachtwoord = NULL)
+    public function __construct($werknemerEmail = NULL, $werknemerWachtwoord = NULL)
     {
         $this->werknemerEmail = $werknemerEmail;
         $this->werknemerWachtwoord = $werknemerWachtwoord;
