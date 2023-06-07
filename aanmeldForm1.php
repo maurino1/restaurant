@@ -1,4 +1,4 @@
-<?php
+
 echo"
 <h1>aanmeldformulier werknemerner</h1>
 <form action="aanmeldForm2.php" method="post">

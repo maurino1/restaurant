@@ -30,10 +30,14 @@ public function aanmelden()
     $sql = $conn->prepare
     ("
         insert into medewerker values 
-        (:werknemerEmail, :werknemerWachtwoord)
+        (:werknemerNaam,:werknemerEmail,:werknemerTelefoonNummer,:werknemerAdres,:werknemerPostcode,:werknemerWachtwoord)
     ");
     $sql->bindParam(":werknemerEmail",$werknemerEmail);
     $sql->bindParam(":werknemerWachtwoord", $wachtwoordHash);
+    $sql->bindParam("werknemerNaam",$werknemerNaam);
+    $sql->bindParam("werknemerAdres",$werknemerAdres);
+    $sql->bindParam("werknemerPostcode",$werknemerPostcode);
+    $sql->bindParam("werknemerTelefoonNummer", $werknemerTelefoonNummer);
     $sql->execute();
     echo    "de werknemer is in de database gezet.<br/>";
 
