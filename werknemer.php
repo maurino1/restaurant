@@ -6,10 +6,23 @@ class werknemer
     protected $werknemerEmail;
     protected $werknemerWachtwoord;
 
-    public function _construct($werknemerEmail = NULL, $werknemerWachtwoord = NULL)
+    public function _construct($werknemerId = Null, $werknemerNaam = Null, $werknemerEmail = NULL, $werknemerTelefoonNummer = Null, $werknemerAdres = Null, $werknemerPostcode = Null, $werknemerWachtwoord = NULL)
     {
+        $this->werknemerId = $werknemerId;
+        $this->werknemerNaam = $werknemerNaam;
         $this->werknemerEmail = $werknemerEmail;
+        $this->werknemerTelefoonNummer = $werknemerTelefoonNummer;
+        $this->werknemerAdres = $werknemerAdres;
+        $this->werknemerPostcode = $werknemerPostcode;
         $this->werknemerWachtwoord = $werknemerWachtwoord;
+    }
+    public function getWerknemerId()
+    {
+        return $this->werknemerId;
+    }
+    public function getWerknemerNaam()
+    {
+        return $this->werknemerNaam;
     }
 
     public function getWerknemerEmail()
