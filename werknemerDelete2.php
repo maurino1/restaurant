@@ -22,7 +22,7 @@ $werknemer1->searchwerknemer($werknemerId);
     <input type="submit"><br/><br/>
 </form>
 
-<h2><a href="werknemerIndex.php">werknemer</a></h2>
+<h2><a href="werknemerIndex.php">home</a></h2>
 </div>
 </body>
 </html>

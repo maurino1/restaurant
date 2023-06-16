@@ -10,7 +10,7 @@ $werknemer1 = new werknemer();
 $werknemer1->readwerknemer();
 
 ?>
-<h2><a href="werknemerIndex.php">terug naar werknemer</a></h2>
+<h2><a href="werknemerIndex.php">home</a></h2>
 </div>
 </body>
 </html>

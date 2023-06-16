@@ -12,7 +12,7 @@
     <input type="submit">
     <br>
 </form>
-<h2><a href="werknemerIndex.php">go back to shows</a></h2>
+<h2><a href="werknemerIndex.php">home</a></h2>
 </div>
 </body>
 </html>
